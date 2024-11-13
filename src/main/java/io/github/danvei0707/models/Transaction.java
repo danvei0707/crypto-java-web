@@ -16,6 +16,7 @@ public class Transaction {
 
     private Long crypto_amount;
     private Date acquisition_date;
+    private String buyer_username;
 
     private Date created_at; // HOW TO MAKE AUTO-GENERATION
 
@@ -56,6 +57,13 @@ public class Transaction {
         this.acquisition_date = acquisition_date;
     }
 
+    public String getBuyer_username() {
+        return buyer_username;
+    }
+
+    public void setBuyer_username(String buyer_username) {
+        this.buyer_username = buyer_username;
+    }
 
     public Date getCreatedAt() {
         return created_at;
